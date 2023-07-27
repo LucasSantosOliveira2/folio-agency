@@ -11,3 +11,13 @@ export const Title = styled.h1`
 
     }
 `
+
+export const SecondTitle = styled(Title)`
+  font-size: 2.5rem;
+  line-height: 3rem;
+
+  @media screen and (min-width: 868px) {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+`;

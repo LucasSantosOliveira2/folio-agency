@@ -2,15 +2,14 @@ import { styled } from "styled-components"
 import { Headline } from "../../components/Headline"
 import Computer from "../../assets/computer2.png"
 
-const HeroContainer = styled.div`
+const HeroContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 868px) {
         flex-direction: row;
         padding: 0px 135px;
-
     }
 `
 
@@ -18,7 +17,7 @@ const Image = styled.img`
     width: 100%;
     max-width: 375px;
     object-fit: cover;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 868px) {
         max-width: 733px;
     }
 `;
