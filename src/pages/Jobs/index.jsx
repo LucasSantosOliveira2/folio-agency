@@ -9,6 +9,7 @@ const JobsContainer = styled.section`
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 48px;
 
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, rgba(237, 229, 240, 0.50) 100%);
     gap: 16px;
