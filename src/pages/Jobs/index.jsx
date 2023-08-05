@@ -8,7 +8,6 @@ const JobsContainer = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
     margin-bottom: 48px;
 
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, rgba(237, 229, 240, 0.50) 100%);
@@ -22,9 +21,13 @@ const JobsContainer = styled.section`
     `
 
 const Image = styled.img`
-border-radius: 8px;
-background-color:${(props) => props.theme.colors.background.blue}; ;
-max-width: 100%;
+display: none;
+@media screen and (min-width: 868px) {
+    display: block;
+    border-radius: 8px;
+    background-color:${(props) => props.theme.colors.background.blue}; ;
+    max-width: 100%;
+    }
 `
 const CardContainer = styled.div`
     display: flex;

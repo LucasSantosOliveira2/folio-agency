@@ -22,7 +22,7 @@ const HeadlineContainer = styled.div`
     padding: 0px ;
     gap: 48px;
   }
-`;
+`
 
 const TitleContainer = styled.div`
   display: flex;
@@ -36,12 +36,12 @@ const TitleContainer = styled.div`
   }
 `
 
-export function Headline({ title, text, btnName, margin, line, secondTitle, showArrow }) {
+export function Headline({ title, text, btnName, margin, line, secondTitle, showArrow, color }) {
   return (
     <HeadlineContainer margin={margin}>
       {line ? <TagLine>{line}</TagLine> : null}
       <TitleContainer>
-        {secondTitle ? <SecondTitle>{secondTitle}</SecondTitle> : null}
+        {secondTitle ? <SecondTitle colorScheme={color}>{secondTitle}</SecondTitle> : null}
         {showArrow && <Arrow />}
       </TitleContainer>
       {title ? <Title>{title}</Title> : null}
@@ -59,4 +59,5 @@ Headline.propTypes = {
   btnName: PropTypes.string,
   margin: PropTypes.string,
   showArrow: PropTypes.bool,
+  color: PropTypes.string,
 };

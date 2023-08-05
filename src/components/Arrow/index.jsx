@@ -1,6 +1,6 @@
 import { styled } from "styled-components"
-import Left from "../../assets/arrow-down-left.png"
-import Right from "../../assets/arrow-down-right.png"
+import Left from "../../assets/left-normal.png"
+import Right from "../../assets/arrow-down-white.png"
 
 
 const Wrapper = styled.div`
@@ -11,18 +11,11 @@ const Wrapper = styled.div`
 
 const ArrowLeft = styled.img`
 max-width: 100%;
-
-&:hover {
-    filter: brightness(1000%);
-    }
 `
 
 const ArrowRight = styled.img`
 max-width: 100%;
 
-&:hover {
-    filter: brightness(1000%);
-    }
 `
 const ArrowContainer = styled.div`
     display: flex;
